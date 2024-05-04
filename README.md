@@ -24,11 +24,10 @@ RegisterNumber:  212223240089
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-```
-```
 data=pd.read_csv("Placement_Data.csv")
 data.head()
-
+```
+```
 data=data.drop('sl_no',axis=1)
 data=data.drop('salary',axis=1)
 data.head()
@@ -72,7 +71,6 @@ def gradient_descent(theta,X,y,alpha,num_iterations):
         gradient=X.T.dot(h-y)/m
         theta-=alpha*gradient
     return theta
-
 theta=gradient_descent(theta,X,y,alpha=0.01,num_iterations=1000)
 
 def predict(theta,X):
@@ -87,7 +85,6 @@ print("Accuracy:",accuracy)
 xnew=np.array([[0,87,0,95,0,2,78,2,0,0,1,0]])
 y_prednew=predict(theta,xnew)
 print(y_prednew)
-
 xnew=np.array([[0,0,0,0,0,2,8,2,0,0,1,0]])
 y_prednew=predict(theta,xnew)
 print(y_prednew)
