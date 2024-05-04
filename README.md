@@ -21,11 +21,11 @@ Program to implement the the Logistic Regression Using Gradient Descent.
 Developed by: S MOHAMED AHSAN
 RegisterNumber:  212223240089
 */
-```
-```
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+```
+```
 data=pd.read_csv("Placement_Data.csv")
 data.head()
 
